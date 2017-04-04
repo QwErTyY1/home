@@ -23,7 +23,12 @@ class Elements extends Component
            'contact'=>[
                 'caption'=>'Contact',
                 'action'=>'index'
-            ]
+            ],
+
+            'products'=>[
+                'caption'=>'Products',
+                'action'=>'index'
+            ],
 
         ],
         'navbar-right'=>[
@@ -68,6 +73,8 @@ class Elements extends Component
 
                 'caption' => $auth['name'].' Log Out',
                 'action'=>'end',
+
+
             ];
 
 
@@ -85,7 +92,10 @@ class Elements extends Component
                 }else{
                     echo "<li>";
                 }
-                echo $this->tag->linkTo($controller .'/'. $option['active'], $option['caption']);
+
+
+
+                echo $this->tag->linkTo($controller .'/'. $option['action'], $option['caption']);
                 echo "</li>";
 
             }

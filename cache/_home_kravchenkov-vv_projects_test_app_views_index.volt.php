@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <?= $this->tag->getTitle() ?>
     <?= $this->tag->stylesheetLink('/css/bootstrap.min.css') ?>
+    <?= $this->tag->stylesheetLink('/css/my.css') ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your invoices">
     <meta name="author" content="Phalcon Team">

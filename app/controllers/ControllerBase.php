@@ -10,6 +10,7 @@ class ControllerBase extends Controller
 
         $this->tag->prependTitle('INVO | ');
         $this->view->setTemplateAfter('main');
+
     }
 
 }

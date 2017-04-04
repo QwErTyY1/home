@@ -1,4 +1,4 @@
-
+<?= $this->getContent() ?>
 
 <div class="row">
 

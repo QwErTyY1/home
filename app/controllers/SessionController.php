@@ -55,7 +55,7 @@ class SessionController extends ControllerBase
 
                 return $this->dispatcher->forward(
                     [
-                        "controller" => "invoices",
+                        "controller" => "index",
                         "action" => "index",
                     ]
                 );
